@@ -12,9 +12,13 @@ describe('Blocks', () => {
             },
             [
               new Text({ content: 'Hello World' }),
-              new Image({ url: 'https://picsum.photos/200/300' }),
+              new Image({
+                url: 'https://picsum.photos/200/300',
+                headers: { 'X-Header': 'value' },
+              }),
               new Video({
                 url: 'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+                headers: { 'X-Header': 'value' },
               }),
             ],
           ),

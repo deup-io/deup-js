@@ -9,12 +9,12 @@ interface TextAttributes {
 
 interface ImageAttributes {
   url: string;
-  headers?: string;
+  headers?: Record<string, string>;
 }
 
 interface VideoAttributes {
   url: string;
-  headers?: string;
+  headers?: Record<string, string>;
 }
 
 export { PageAttributes, TextAttributes, ImageAttributes, VideoAttributes };
