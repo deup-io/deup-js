@@ -1,0 +1,32 @@
+{
+  "name": "@deup-io/deup",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "rm -rf bundle && rollup -c",
+    "build": "yarn run bundle",
+    "test": "mocha --timeout 10000"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@optimize-lodash/rollup-plugin": "^4.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/mocha": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.4",
+    "rollup": "^3.15.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  }
+}
