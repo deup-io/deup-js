@@ -1,6 +1,6 @@
 interface PageAttributes {
   title: string;
-  description: string;
+  description?: string;
 }
 
 interface TextAttributes {
