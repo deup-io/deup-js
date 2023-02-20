@@ -16,6 +16,7 @@ class Image extends Block {
     this.type = BlockType.IMAGE;
     this.attributes = {
       url: attr.url,
+      title: attr.title,
       headers: attr.headers,
     };
   }

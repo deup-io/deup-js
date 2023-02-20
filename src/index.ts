@@ -1,5 +1,5 @@
 import Block from './block';
-import { Page, Text, Image, Video } from './blocks/index';
+import { Page, Text, Image, Video } from './blocks';
 
 class Deup {
   // isDeupApp
@@ -27,12 +27,20 @@ class Deup {
   }
 
   // Render
-  public static render(block: Block): void {
-    Deup.sendMessage('render', block);
+  public static render(page: Page): void {
+    Deup.sendMessage('render', page);
   }
 }
 
 export { Page, Text, Image, Video };
+export { BlockType, TextLevel } from './constants';
+export {
+  Tag,
+  PageAttributes,
+  TextAttributes,
+  ImageAttributes,
+  VideoAttributes,
+} from './interfaces';
 
 export const isDeupApp = Deup.isDeupApp;
 export const render = Deup.render;

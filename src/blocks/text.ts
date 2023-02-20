@@ -16,6 +16,7 @@ class Text extends Block {
     this.type = BlockType.TEXT;
     this.attributes = {
       content: attr.content,
+      level: attr.level,
     };
   }
 }

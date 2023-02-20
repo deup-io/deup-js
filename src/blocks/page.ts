@@ -19,6 +19,7 @@ class Page extends Block {
     this.attributes = {
       title: attr.title,
       description: attr.description,
+      tags: attr.tags,
     };
   }
 }

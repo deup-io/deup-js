@@ -16,6 +16,7 @@ class Video extends Block {
     this.type = BlockType.VIDEO;
     this.attributes = {
       url: attr.url,
+      title: attr.title,
       headers: attr.headers,
     };
   }
