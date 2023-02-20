@@ -15,12 +15,17 @@ interface TextAttributes {
 interface ImageAttributes {
   url: string;
   title?: string;
+  width?: number;
+  height?: number;
   headers?: Record<string, string>;
 }
 
 interface VideoAttributes {
   url: string;
   title?: string;
+  thumbnail?: string;
+  width?: number;
+  height?: number;
   headers?: Record<string, string>;
 }
 
