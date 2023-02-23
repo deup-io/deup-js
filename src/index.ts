@@ -15,7 +15,7 @@ class Deup {
 
   // SendMessage
   private static sendMessage(name: string, block: Block) {
-    const message = JSON.stringify({ name, block });
+    const message = JSON.stringify({ name, message: block });
     if (!Deup.isDeupApp) {
       console.log(message);
       return;
