@@ -1,5 +1,5 @@
 import Block from './block';
-import { Page, Text, Image, Video } from './blocks';
+import { Page, Text, Image, Video, RichText } from './blocks';
 
 class Deup {
   // isDeupApp
@@ -12,6 +12,7 @@ class Deup {
   public static Text = Text;
   public static Image = Image;
   public static Video = Video;
+  public static RichText = RichText;
 
   // SendMessage
   private static sendMessage(name: string, block: Block) {
@@ -32,7 +33,7 @@ class Deup {
   }
 }
 
-export { Page, Text, Image, Video };
+export { Page, Text, Image, Video, RichText };
 export { BlockType, TextLevel } from './constants';
 export {
   Tag,

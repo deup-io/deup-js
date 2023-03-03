@@ -2,6 +2,7 @@
 export enum BlockType {
   PAGE = 'page',
   TEXT = 'text',
+  RICH_TEXT = 'richText',
   IMAGE = 'image',
   VIDEO = 'video',
 }

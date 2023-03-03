@@ -1,6 +1,6 @@
 import Block from '../block';
 import { BlockType } from '../constants';
-import { PageAttributes } from '../interfaces/attributes';
+import { PageAttributes } from '../interfaces';
 
 class Page extends Block {
   protected attributes: PageAttributes;

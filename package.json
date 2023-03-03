@@ -1,12 +1,25 @@
 {
   "name": "@deup-io/core",
-  "version": "1.0.0",
-  "license": "MIT",
+  "version": "1.0.5",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://docs.deup.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deup-io/deup-js"
+  },
   "scripts": {
-    "bundle": "rm -rf bundle && rollup -c",
-    "build": "yarn run bundle",
+    "build": "rimraf dist && tsc",
+    "rollup:build": "rimraf bundle && rollup -c",
     "test": "mocha --timeout 10000"
   },
+  "files": [
+    "dist/**/*"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "deup"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@optimize-lodash/rollup-plugin": "^4.0.3",
@@ -23,6 +36,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "mocha": "^10.2.0",
     "prettier": "^2.8.4",
+    "rimraf": "^4.1.2",
     "rollup": "^3.15.0",
     "rollup-plugin-terser": "^7.0.2",
     "ts-node": "^10.9.1",

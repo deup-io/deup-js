@@ -1,6 +1,6 @@
 import Block from '../block';
 import { BlockType } from '../constants';
-import { TextAttributes } from '../interfaces/attributes';
+import { TextAttributes } from '../interfaces';
 
 class Text extends Block {
   protected attributes: TextAttributes;
@@ -16,7 +16,14 @@ class Text extends Block {
     this.type = BlockType.TEXT;
     this.attributes = {
       content: attr.content,
+      color: attr.color,
+      background: attr.background,
+      link: attr.link,
       level: attr.level,
+      bold: attr.bold,
+      italic: attr.italic,
+      underline: attr.underline,
+      strikethrough: attr.strikethrough,
     };
   }
 }

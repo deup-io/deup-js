@@ -1,6 +1,6 @@
 import Block from '../block';
 import { BlockType } from '../constants';
-import { VideoAttributes } from '../interfaces/attributes';
+import { VideoAttributes } from '../interfaces';
 
 class Video extends Block {
   protected attributes: VideoAttributes;
@@ -17,6 +17,9 @@ class Video extends Block {
     this.attributes = {
       url: attr.url,
       title: attr.title,
+      thumbnail: attr.thumbnail,
+      width: attr.width,
+      height: attr.height,
       headers: attr.headers,
     };
   }

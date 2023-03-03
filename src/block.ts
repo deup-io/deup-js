@@ -4,11 +4,11 @@ import {
   TextAttributes,
   ImageAttributes,
   VideoAttributes,
-} from './interfaces/attributes';
+} from './interfaces';
 
 abstract class Block {
-  protected type: BlockType;
-  protected attributes:
+  protected type?: BlockType;
+  protected attributes?:
     | PageAttributes
     | TextAttributes
     | ImageAttributes

@@ -9,7 +9,14 @@ interface PageAttributes {
 
 interface TextAttributes {
   content: string;
+  color?: string;
+  background?: string;
+  link?: string;
   level?: TextLevel;
+  bold?: boolean;
+  italic?: boolean;
+  underline?: boolean;
+  strikethrough?: boolean;
 }
 
 interface ImageAttributes {
