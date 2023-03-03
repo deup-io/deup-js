@@ -26,8 +26,8 @@ Deup.render(
       title: 'This is a page title.',
       description: 'This is a page description.',
       tags: [
-        { name: 'tag1', color: '#000000' },
-        { name: 'tag2', color: '#ffffff' },
+        { name: 'tag1', color: '#8bdb52' },
+        { name: 'tag2', color: '#3c7ad1' },
       ],
     },
     [
