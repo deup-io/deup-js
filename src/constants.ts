@@ -7,11 +7,11 @@ export enum BlockType {
   VIDEO = 'video',
 }
 
-export enum TextLevel {
-  H1,
-  H2,
-  H3,
-  H4,
-  H5,
-  H6,
+export enum TextHeading {
+  H1 = 'h1',
+  H2 = 'h2',
+  H3 = 'h3',
+  H4 = 'h4',
+  H5 = 'h5',
+  H6 = 'h6',
 }

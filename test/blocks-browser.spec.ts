@@ -12,12 +12,12 @@ describe('Blocks-browser', () => {
               tags: [{ name: 'tag1', color: '#000000' }],
             },
             [
-              new Deup.Text({ content: 'headline1', level: 1 }),
-              new Deup.Text({ content: 'headline2', level: 2 }),
-              new Deup.Text({ content: 'headline3', level: 3 }),
-              new Deup.Text({ content: 'headline4', level: 4 }),
-              new Deup.Text({ content: 'headline5', level: 5 }),
-              new Deup.Text({ content: 'headline6', level: 6 }),
+              new Deup.Text({ content: 'headline1', heading: 'h1' }),
+              new Deup.Text({ content: 'headline2', heading: 'h2' }),
+              new Deup.Text({ content: 'headline3', heading: 'h3' }),
+              new Deup.Text({ content: 'headline4', heading: 'h4' }),
+              new Deup.Text({ content: 'headline5', heading: 'h5' }),
+              new Deup.Text({ content: 'headline6', heading: 'h6' }),
               new Deup.Image({
                 title: 'image',
                 url: 'https://picsum.photos/200/300',

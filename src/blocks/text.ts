@@ -19,7 +19,7 @@ class Text extends Block {
       color: attr.color,
       background: attr.background,
       link: attr.link,
-      level: attr.level,
+      heading: attr.heading,
       bold: attr.bold,
       italic: attr.italic,
       underline: attr.underline,

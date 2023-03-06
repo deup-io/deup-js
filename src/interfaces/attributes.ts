@@ -1,5 +1,5 @@
 import { Tag } from './tag';
-import { TextLevel } from '../constants';
+import { TextHeading } from '../constants';
 
 interface PageAttributes {
   title: string;
@@ -12,7 +12,7 @@ interface TextAttributes {
   color?: string;
   background?: string;
   link?: string;
-  level?: TextLevel;
+  heading?: TextHeading | string;
   bold?: boolean;
   italic?: boolean;
   underline?: boolean;

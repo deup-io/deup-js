@@ -34,7 +34,7 @@ class Deup {
 }
 
 export { Page, Text, Image, Video, RichText };
-export { BlockType, TextLevel } from './constants';
+export { BlockType, TextHeading } from './constants';
 export {
   Tag,
   PageAttributes,
