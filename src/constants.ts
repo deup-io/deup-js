@@ -2,7 +2,7 @@
 export enum BlockType {
   PAGE = 'page',
   TEXT = 'text',
-  TEXT_LIST = 'text/list',
+  TEXT_LIST = 'text-list',
   IMAGE = 'image',
   VIDEO = 'video',
 }
