@@ -2,6 +2,6 @@ import Page from './page';
 import Text from './text';
 import Image from './image';
 import Video from './video';
-import RichText from './rich-text';
+import TextList from './text-list';
 
-export { Page, Text, Image, Video, RichText };
+export { Page, Text, Image, Video, TextList };

@@ -22,6 +22,14 @@ class Page extends Block {
       tags: attr.tags,
     };
   }
+
+  /**
+   * add.
+   */
+  add(block: Block): void {
+    if (!this.children) this.children = [];
+    this.children.push(block);
+  }
 }
 
 export default Page;

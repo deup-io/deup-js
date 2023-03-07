@@ -4,6 +4,7 @@ describe('Blocks', () => {
   describe('#Page', () => {
     it('should be available', async () => {
       await (async () => {
+        // Render
         Deup.render(
           new Page(
             {
