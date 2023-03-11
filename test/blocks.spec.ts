@@ -1,11 +1,11 @@
+import * as zlib from 'zlib';
 import Deup, { Image, Page, Text, Video, TextHeading } from '../src';
 
 describe('Blocks', () => {
   describe('#Page', () => {
     it('should be available', async () => {
       await (async () => {
-        // Render
-        Deup.render(
+        const message = Deup.render(
           new Page(
             {
               title: 'This is a page title.',
@@ -35,6 +35,9 @@ describe('Blocks', () => {
             ],
           ),
         );
+
+        console.log(message);
+        console.log(zlib.gzipSync(message).toString('base64'));
       })();
     });
   });

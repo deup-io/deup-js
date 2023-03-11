@@ -15,11 +15,10 @@ class Deup {
   public static TextList = TextList;
 
   // SendMessage
-  private static sendMessage(name: string, block: Block) {
+  private static sendMessage(name: string, block: Block): string | void {
     const message = JSON.stringify({ name, message: block });
     if (!Deup.isDeupApp) {
-      console.log(message);
-      return;
+      return message;
     }
 
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -28,8 +27,8 @@ class Deup {
   }
 
   // Render
-  public static render(page: Page): void {
-    Deup.sendMessage('render', page);
+  public static render(page: Page): string {
+    return Deup.sendMessage('render', page) ?? '';
   }
 }
 
